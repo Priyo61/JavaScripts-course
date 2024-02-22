@@ -9,13 +9,13 @@
     <!-- object -->
 
     <script>
-     let product={
-        company:"Mango",
-        price:234,
-        item_name:"jeans",
-        "item-name": "t-shirt",
+    //  let product={
+    //     company:"Mango",
+    //     price:234,
+    //     item_name:"jeans",
+    //     "item-name": "t-shirt",
 
-     };
+    //  };
     //  console.log(product);
 
      //checking data type
@@ -44,6 +44,23 @@
     // another way of delete
     // delete product ["company"];
     // console.log(product);
+
+    // inside Object what can we put====================================
+
+
+    let product={
+        company:"Mango",
+        price:234,
+        item_name:"jeans",
+        "item-name": "t-shirt",
+        displayprice: function(){
+            console.log(`price of the product is ${this.price}`)
+        }
+
+     };
+     product.displayprice();
+
+
 
 
 
