@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prac5</title>
+    <style>
+        #button{
+            height: 50px;
+            width: 50px;
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    <h3 id="greet"></h3>
+    <button id="button" onclick="buttonpresssed()">0</button>
+
+    <script>
+
+        let notime = 0;
+        function buttonpresssed(){
+            
+            let button = document.querySelector('#button');
+            notime ++;
+            button.innerText = notime;
+        }
+
+
+
+
+
+
+        function dogreet(personname="Dear"){
+        let date = new Date();
+        let hours = date.getHours();
+        // let hours = 9;
+        let heading =document.querySelector('#greet');
+        console.log(hours);
+        if (hours > 5 && hours<12){
+            heading.innerText = `Good Morning ${personname}`;
+        }else if (hours >12 && hours <18){
+            heading.innerText = `Good Afternoon ${personname}`;
+        }else{
+            heading.innerText = `Good Night ${personname}`;
+        }
+    }
+    dogreet('priyo');
+    </script>
+    
+</body>
+</html>
