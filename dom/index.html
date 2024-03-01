@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <div>
+    <h1 id="heading">DOM API</h1>
+    <h1 class="list1 ">list of nodes
+        <ul class="list">
+            <li>apple</li>
+            <!-- under class -->
+            <li>mango</li>
+        </ul>
+    </h1>
+</div>
+
+
+<script>
+
+    // dom searching
+
+    //getElementById--finding element by id
+
+    // let findElementById = document.getElementById('heading');
+    // console.log(findElementById);
+    // let findElementById = document.getElementById('heading');
+    // console.log(findElementById.innerHTML);
+    // console.log(findElementById.innerText);
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //getElementByClassName---find element by class name
+
+    //let findElementByClassname = document.getElementsByClassName('list');
+    // console.log(findElementByClassname);
+    // console.log(...findElementByClassname);
+    // for (let ele of findElementByClassname){
+    //     console.log(ele.innerText);
+    // }
+    // // for (let ele of findElementByClassname){
+    // //     console.log(ele);
+    // // }
+    // for (let ele of findElementByClassname){
+    //     console.log(ele.innerHTML);
+    // }
+    // for (let ele of findElementByClassname){
+    //     console.log(ele.textContent);
+    // }
+
+    ///////////////////////////////////////////////////////////////////////////
+
+    // getElementBytagName----find element by tag name
+
+    // let findElement = document.getElementsByTagName('h1');
+    // // console.log(...findElement);
+
+    // for (let i of findElement){
+    //     console.log(i.innerText);
+    //     console.log(i.innerHTML);
+    //     console.log(i.textContent);
+    // }
+
+    ////////////////////////////////////////////////////////////////////////////
+
+    //QuerySelector--also finding element
+
+    // let usOfQuerySelector = document.querySelector('#heading')
+    // console.log(usOfQuerySelector);
+    // console.log(usOfQuerySelector.innerHTML);
+    // console.log(usOfQuerySelector.innerText='DOM CLASS');//changing element
+    // console.log(usOfQuerySelector.textContent);
+
+    // let usOfQuerySelectorAll = document.querySelectorAll('li');
+    // console.log(usOfQuerySelectorAll);
+    // console.log(...usOfQuerySelectorAll);
+    // usOfQuerySelectorAll.forEach((curr) => {
+    //     console.log(curr);
+        
+    // });
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//CURD OPERATION    
+
+
+
+
+</script>
+</body>
+</html>

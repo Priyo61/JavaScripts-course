@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>Simple Todo App</h1>
+        <input type="text" id="inputfield"/>
+        <button class="button">click me</button>
+        <div class="tododlistapp">
+            <p id="firsttodo"></p>
+        </div>
+    </div>
+    <script>
+      
+    let findele = document.getElementById('inputfield');
+    // console.log(findele); 
+    let findClass = document.querySelector('.button');
+    let list = document.querySelector('.tododlistapp');
+// console.log(findClass); 
+    // let firsttodo =document.getElementById('firsttodo');
+
+    const addtodo = () => {
+        // console.log(findele.value);
+        // // firsttodo.textContent = findele.value;
+        // list.append(findele);
+        let pele= document.createElement('p');
+        pele.textContent = findele.value;
+        console.log(pele);
+        list.append(pele);
+        findele.value = '';
+    }
+
+    findClass.addEventListener('click', () => {
+        addtodo();
+    })
+    list.addEventListener('click',(event) => {
+        console.log(event.target);
+        let curr = event.target;
+        curr.remove();
+    })
+
+
+
+    </script>
+</body>
+</html>
